@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    这是费鱼
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $.ajax({
+            type:"post",
+            url: "/feiyu/empfeiyu/login",
+            data: {
+                "loginname":"张帅",
+                "password":"123456",
+                "env":"dev"
+            },
+            success:function (data) {
+                alert(1);
+                console.log(data);
+            }
+        })
+    </script>
+</body>
+</html>
