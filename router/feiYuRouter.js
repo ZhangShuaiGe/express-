@@ -8,7 +8,7 @@ var apiLogin = require("../module/feiYu/apiLogin");
 var http = require("../module/feiYu/http");
 
 router.get("*",function (req,res) {
-    res.render("feiyu/index",{
+    res.render("feiYu/index",{
         "layout": ""
     });
 });

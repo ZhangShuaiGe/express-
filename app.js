@@ -40,10 +40,10 @@ app.use("/feiyu",feiyu);
 //启动日志服务
 config.logger();
 
-app.listen(9001,function(err) {
+app.listen(3389,function(err) {
     if (err) {
         logger.error(err);
     }
-	console.log("http://127.0.0.1:9001");
-    logger.info("服务启动监听端口：9001");
+	console.log("http://127.0.0.1:3389");
+    logger.info("服务启动监听端口：3389");
 });
